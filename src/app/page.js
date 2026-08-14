@@ -95,13 +95,16 @@ export default function HomePage() {
           <div className={styles.divider}></div>
         </div>
         <div className={styles.bannersGrid}>
-          <Link href="/ruta">
-            <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-RUTA.jpg" alt="Ruta" className={styles.bannerImg} />
+          <Link href="/ruta" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }}>
+            <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-RUTA.jpg" alt="Ruta" className={styles.bannerImg} style={{ marginBottom: '10px' }} />
+            <h3 style={{ fontSize: '1.2rem', color: '#005a87' }}>Ruta de Trabajo Infantil</h3>
+            <p style={{ fontSize: '0.9rem', color: '#555' }}>Identificación y atención de casos en Oaxaca</p>
           </Link>
-          <Link href="/distintivo-tip">
-            <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-TIP.jpg" alt="TIP" className={styles.bannerImg} />
+          <Link href="/distintivo-tip" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }}>
+            <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-TIP.jpg" alt="TIP" className={styles.bannerImg} style={{ marginBottom: '10px' }} />
+            <h3 style={{ fontSize: '1.2rem', color: '#005a87' }}>Distintivo TIP</h3>
+            <p style={{ fontSize: '0.9rem', color: '#555' }}>Trabajo Inclusivo con el Periodo</p>
           </Link>
-          <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-mixteca-1.jpg" alt="Mixteca" className={styles.bannerImg} />
         </div>
       </section>
 
@@ -148,11 +151,14 @@ export default function HomePage() {
           <h2>Multimedia</h2>
           <div className={styles.divider}></div>
         </div>
-        <div className={styles.multimediaContainer}>
-          <div className={styles.videoPlaceholder}>
-            <div className={styles.playButton}>▶</div>
-            <p>Video Institucional</p>
-          </div>
+        <div className={styles.multimediaContainer} style={{ textAlign: 'center' }}>
+          <video 
+            controls 
+            style={{ width: '100%', maxWidth: '800px', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}
+            src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/07/IMG_6622.mov"
+          >
+            Tu navegador no soporta la reproducción de video nativa.
+          </video>
         </div>
       </section>
 
