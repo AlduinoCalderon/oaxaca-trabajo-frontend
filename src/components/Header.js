@@ -37,7 +37,7 @@ export default function Header() {
               <Link href="#">Trámites y Servicios</Link>
               <Link href="#">Transparencia</Link>
               <Link href="#">Noticias</Link>
-              <Link href="#documentos">Documentos de interés</Link>
+              <Link href="#documentos">Información que debes saber</Link>
             </nav>
           </div>
 
@@ -61,7 +61,7 @@ export default function Header() {
           <Link href="#" onClick={() => setIsMenuOpen(false)}>Trámites y Servicios</Link>
           <Link href="#" onClick={() => setIsMenuOpen(false)}>Transparencia</Link>
           <Link href="#" onClick={() => setIsMenuOpen(false)}>Noticias</Link>
-          <Link href="#documentos" onClick={() => setIsMenuOpen(false)}>Documentos de interés</Link>
+          <Link href="#documentos" onClick={() => setIsMenuOpen(false)}>Información que debes saber</Link>
         </nav>
       </div>
     </>

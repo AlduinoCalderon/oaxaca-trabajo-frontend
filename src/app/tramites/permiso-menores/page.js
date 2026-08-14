@@ -33,18 +33,6 @@ export default function PermisoMenoresPage() {
           <li>Tutor</li>
         </ul>
 
-        {/* Video Embedding */}
-        <div style={{ margin: '40px 0', textAlign: 'center' }}>
-          <h3 style={{ color: '#005a87', marginBottom: '15px' }}>Material Audiovisual de Apoyo</h3>
-          <video 
-            controls 
-            style={{ width: '100%', maxWidth: '800px', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}
-            src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/07/IMG_6622.mov"
-          >
-            Tu navegador no soporta la reproducción de video nativa.
-          </video>
-        </div>
-
       </div>
     </div>
   );

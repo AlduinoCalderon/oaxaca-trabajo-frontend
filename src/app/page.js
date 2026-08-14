@@ -13,7 +13,7 @@ export default function HomePage() {
             <p className="fade-in" style={{animationDelay: '0.2s'}}>Gobierno del Estado de Oaxaca 2022 - 2028</p>
             <div className={styles.heroActions}>
               <Link href="#documentos" className={`btn-primary fade-in`} style={{animationDelay: '0.4s'}}>
-                Ver Documentos de interés
+                Ver Información que debes saber
               </Link>
             </div>
           </div>
@@ -25,7 +25,7 @@ export default function HomePage() {
         />
       </section>
 
-      {/* Trámites y Servicios */}
+      {/* 1. Trámites y Servicios */}
       <section className={styles.servicesSection}>
         <div className={styles.sectionHeader}>
           <h2>Trámites y Servicios</h2>
@@ -37,78 +37,39 @@ export default function HomePage() {
             <div className={styles.serviceIcon}>
               <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/tramites-home/icono_tramites.png" alt="Procuraduría" />
             </div>
-            <h3>Procuraduría de la Defensa del Trabajo (PRODET)</h3>
-            <p>Agenda tu cita para recibir asesoría legal, conciliación o representación jurídica laboral gratuita.</p>
+            <h3>Procuraduría de la Defensa del Trabajo</h3>
+            <p>Defensa de tus derechos laborales</p>
             <span className={styles.serviceLink}>Ver más →</span>
           </Link>
 
-          <Link href="/tramites/permiso-menores" className={styles.serviceCard}>
+          <div className={styles.serviceCard}>
             <div className={styles.serviceIcon}>
               <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/tramites-home/icono_servicios.png" alt="Inspección" />
             </div>
-            <h3>Permisos de trabajo para menores</h3>
-            <p>Expedición de permisos de trabajo para menores en edad permitida.</p>
-            <span className={styles.serviceLink}>Ver más →</span>
-          </Link>
+            <h3>Inspección del trabajo</h3>
+            <p>Servicios para empleadores y permisos de trabajo para adolescentes en edad permitida</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '15px' }}>
+              <Link href="/tramites/permiso-menores" className={styles.serviceLink} style={{ alignSelf: 'flex-start' }}>
+                Ver trámite →
+              </Link>
+              <Link href="/citas" style={{ fontSize: '0.85rem', background: '#005a87', color: 'white', padding: '8px 12px', borderRadius: '5px', textAlign: 'center', textDecoration: 'none' }}>
+                📅 Agenda para empleadores o tutores de adolescentes en edad permitida de trabajo
+              </Link>
+            </div>
+          </div>
 
           <a href="#" className={styles.serviceCard}>
             <div className={styles.serviceIcon}>
               <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/icono-contacto.png" alt="Empleo" />
             </div>
-            <h3>Fomento al Empleo</h3>
-            <p>Descubre las vacantes disponibles y los programas de apoyo para buscadores de empleo.</p>
+            <h3>Fomento al empleo</h3>
+            <p>acciones de promoción del trabajo digno</p>
             <span className={styles.serviceLink}>Ver más →</span>
           </a>
         </div>
       </section>
-      {/* Documentos de interés */}
-      <section id="documentos" className={styles.documentosSection}>
-        <div className={styles.sectionHeader}>
-          <h2>Documentos de interés</h2>
-          <div className={styles.divider}></div>
-        </div>
-        <div className={styles.documentosGrid}>
-          <a href="/documentos/Memorandum_Entendimiento_Inspeccion.pdf" target="_blank" rel="noopener noreferrer" className={styles.documentoCard}>
-            <div className={styles.documentoIcon}>📄</div>
-            <div className={styles.documentoInfo}>
-              <h3>Memorándum de Entendimiento</h3>
-              <p>Dirección de Inspección (Versión Final)</p>
-            </div>
-            <span className={styles.downloadBtn}>Descargar PDF</span>
-          </a>
-          <a href="/documento-ruta-trabajo-infantil.pdf" target="_blank" rel="noopener noreferrer" className={styles.documentoCard}>
-            <div className={styles.documentoIcon}>📄</div>
-            <div className={styles.documentoInfo}>
-              <h3>Ruta de Identificación y Atención</h3>
-              <p>Casos de Trabajo Infantil en el Estado de Oaxaca</p>
-            </div>
-            <span className={styles.downloadBtn}>Descargar PDF</span>
-          </a>
-        </div>
-      </section>
 
-
-      {/* Convocatorias */}
-      <section className={styles.convocatoriasSection}>
-        <div className={styles.sectionHeader}>
-          <h2>Convocatorias</h2>
-          <div className={styles.divider}></div>
-        </div>
-        <div className={styles.bannersGrid}>
-          <Link href="/ruta" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }}>
-            <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-RUTA.jpg" alt="Ruta" className={styles.bannerImg} style={{ marginBottom: '10px' }} />
-            <h3 style={{ fontSize: '1.2rem', color: '#005a87' }}>Ruta de Trabajo Infantil</h3>
-            <p style={{ fontSize: '0.9rem', color: '#555' }}>Identificación y atención de casos en Oaxaca</p>
-          </Link>
-          <Link href="/distintivo-tip" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }}>
-            <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-TIP.jpg" alt="TIP" className={styles.bannerImg} style={{ marginBottom: '10px' }} />
-            <h3 style={{ fontSize: '1.2rem', color: '#005a87' }}>Distintivo TIP</h3>
-            <p style={{ fontSize: '0.9rem', color: '#555' }}>Trabajo Inclusivo con el Periodo</p>
-          </Link>
-        </div>
-      </section>
-
-      {/* Noticias */}
+      {/* 2. Últimas Noticias */}
       <section className={styles.newsSection}>
         <div className={styles.sectionHeader}>
           <h2>Últimas Noticias</h2>
@@ -145,7 +106,53 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Multimedia */}
+      {/* 3. Información que debes saber */}
+      <section id="documentos" className={styles.documentosSection}>
+        <div className={styles.sectionHeader}>
+          <h2>Información que debes saber</h2>
+          <div className={styles.divider}></div>
+        </div>
+        <div className={styles.documentosGrid}>
+          <a href="/documentos/Memorandum_Entendimiento_Inspeccion.pdf" target="_blank" rel="noopener noreferrer" className={styles.documentoCard}>
+            <div className={styles.documentoIcon}>📄</div>
+            <div className={styles.documentoInfo}>
+              <h3>Memorándum de Entendimiento</h3>
+              <p>Dirección de Inspección (Versión Final)</p>
+            </div>
+            <span className={styles.downloadBtn}>Descargar PDF</span>
+          </a>
+          <a href="/documento-ruta-trabajo-infantil.pdf" target="_blank" rel="noopener noreferrer" className={styles.documentoCard}>
+            <div className={styles.documentoIcon}>📄</div>
+            <div className={styles.documentoInfo}>
+              <h3>Ruta de Identificación y Atención</h3>
+              <p>Casos de Trabajo Infantil en el Estado de Oaxaca</p>
+            </div>
+            <span className={styles.downloadBtn}>Descargar PDF</span>
+          </a>
+        </div>
+      </section>
+
+      {/* 4. Convocatorias */}
+      <section className={styles.convocatoriasSection}>
+        <div className={styles.sectionHeader}>
+          <h2>Convocatorias</h2>
+          <div className={styles.divider}></div>
+        </div>
+        <div className={styles.bannersGrid}>
+          <Link href="/ruta" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }}>
+            <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-RUTA.jpg" alt="Ruta" className={styles.bannerImg} style={{ marginBottom: '10px' }} />
+            <h3 style={{ fontSize: '1.2rem', color: '#005a87' }}>Ruta de Trabajo Infantil</h3>
+            <p style={{ fontSize: '0.9rem', color: '#555' }}>Identificación y atención de casos en Oaxaca</p>
+          </Link>
+          <Link href="/distintivo-tip" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }}>
+            <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-TIP.jpg" alt="TIP" className={styles.bannerImg} style={{ marginBottom: '10px' }} />
+            <h3 style={{ fontSize: '1.2rem', color: '#005a87' }}>Distintivo TIP</h3>
+            <p style={{ fontSize: '0.9rem', color: '#555' }}>Trabajo Inclusivo con el Periodo</p>
+          </Link>
+        </div>
+      </section>
+
+      {/* 5. Multimedia */}
       <section className={styles.multimediaSection}>
         <div className={styles.sectionHeader}>
           <h2>Multimedia</h2>
