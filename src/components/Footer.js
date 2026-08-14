@@ -35,9 +35,9 @@ export default function Footer() {
           <div className={styles.col}>
             <h3>Síguenos</h3>
             <div className={styles.socialIcons}>
-              <a href="#" className={styles.icon}>FB</a>
-              <a href="#" className={styles.icon}>TW</a>
-              <a href="#" className={styles.icon}>IG</a>
+              <a href="https://www.facebook.com/SecretariaTrabajoOax" target="_blank" rel="noopener noreferrer" className={styles.icon}>FB</a>
+              <a href="https://x.com/Trabajo_GobOax" target="_blank" rel="noopener noreferrer" className={styles.icon}>X</a>
+              <a href="https://www.instagram.com/secretariatrabajooax" target="_blank" rel="noopener noreferrer" className={styles.icon}>IG</a>
             </div>
           </div>
           
