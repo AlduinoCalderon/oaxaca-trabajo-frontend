@@ -9,6 +9,10 @@ export const metadata = {
   title: 'Secretaría del Trabajo | Gobierno del Estado de Oaxaca',
   description: 'Portal oficial de la Secretaría del Trabajo del Estado de Oaxaca.',
   manifest: '/manifest.json',
+  icons: {
+    icon: '/icon-512x512.png',
+    apple: '/icon-512x512.png',
+  },
 };
 
 export default function RootLayout({ children }) {
