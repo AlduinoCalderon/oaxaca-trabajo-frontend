@@ -62,21 +62,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className={styles.serviceCard}>
+          <a href="#" className={styles.serviceCard}>
             <div className={styles.serviceIcon}>
               <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/icono-contacto.png" alt="Empleo" />
             </div>
             <h3>Fomento al empleo</h3>
             <p>acciones de promoción del trabajo digno</p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '15px' }}>
-              <Link href="#" style={{ fontSize: '0.85rem', background: '#005a87', color: 'white', padding: '8px 12px', borderRadius: '5px', textAlign: 'center', textDecoration: 'none' }}>
-                🚀 Inclusión al empleo
-              </Link>
-              <Link href="#" style={{ fontSize: '0.85rem', background: '#005a87', color: 'white', padding: '8px 12px', borderRadius: '5px', textAlign: 'center', textDecoration: 'none' }}>
-                🏢 Fomento Laboral Penitenciario
-              </Link>
-            </div>
-          </div>
+            <span className={styles.serviceLink}>Ver más →</span>
+          </a>
         </div>
       </section>
 
