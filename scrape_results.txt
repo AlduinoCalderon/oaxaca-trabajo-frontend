@@ -1,0 +1,30 @@
+--- Fonts ---
+
+--- Texts and Headings ---
+H3: Trámites y Servicios
+H3: Multimedia
+H3: Convocatorias
+H3: Ejes de Gobierno
+H4: Síguenos en:
+H4: Secretaría del Trabajo
+H4: Número Único  de Emergencias
+
+--- News/Articles ---
+
+--- Images not matched as logos ---
+https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2023/12/trabajo.png
+https://www.oaxaca.gob.mx/wp-content/uploads/2026/06/banner-1.png
+https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/portada-mixteca.jpg
+https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/07/WhatsApp-Image-2026-07-22-at-12.10.12-PM-3qqqqqqqqqqqqqq.jpg
+https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-RUTA.jpg
+https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/07/vial-amp.jpg
+https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-mixteca-1.jpg
+https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-TIP.jpg
+https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/07/Captura-de-pantalla-2026-07-29-114952.png
+https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/BANNER-RUTA-V2.jpg
+https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/07/tu-vida.jpg
+https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/ejes/EJE_01_PS.png
+https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/ejes/EJE_03_RH.png
+https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/ejes/EJE_04_DIS.png
+https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/imagotipo-footer.svg
+https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/tecnologias-solo-blanco.png

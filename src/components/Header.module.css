@@ -1,0 +1,174 @@
+.topBar {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.8rem;
+  padding: 8px 0;
+}
+
+.topBarContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topBarLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.topBarLinks a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  background-color: var(--surface-color);
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.desktopNav {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  transition: color 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav a:hover {
+  color: var(--primary-color);
+}
+
+.btnCitas {
+  background-color: var(--secondary-color);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: var(--shadow-sm);
+  transition: background-color 0.2s;
+}
+
+.btnCitas:hover {
+  background-color: var(--secondary-light);
+  color: white !important;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: white;
+  z-index: 99;
+  transition: left 0.3s ease;
+  box-shadow: var(--shadow-lg);
+  padding-top: 100px;
+}
+
+.mobileMenuOpen {
+  left: 0;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mobileNav a {
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-color);
+  text-transform: uppercase;
+}
+
+.btnCitasMobile {
+  background-color: var(--secondary-color);
+  color: white !important;
+  margin: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border-bottom: none !important;
+}
+
+@media (max-width: 992px) {
+  .desktopNav {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .logo {
+    height: 50px;
+  }
+}

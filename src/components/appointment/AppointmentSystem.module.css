@@ -1,0 +1,9 @@
+.systemContainer {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.stepContent {
+  position: relative;
+  min-height: 400px;
+}

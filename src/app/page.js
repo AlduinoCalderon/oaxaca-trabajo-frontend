@@ -1,69 +1,144 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from 'next/link';
+import styles from './page.module.css';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className={styles.homeContainer}>
+      
+      {/* Hero Banner Section */}
+      <section className={styles.heroSection}>
+        <div className={styles.heroOverlay}>
+          <div className={styles.heroContent}>
+            <h1 className="fade-in">Secretaría del Trabajo</h1>
+            <p className="fade-in" style={{animationDelay: '0.2s'}}>Gobierno del Estado de Oaxaca 2022 - 2028</p>
+            <div className={styles.heroActions}>
+              <Link href="/citas" className={`btn-primary fade-in`} style={{animationDelay: '0.4s'}}>
+                Agendar Cita PRODET
+              </Link>
+            </div>
+          </div>
+        </div>
+        <img 
+          src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/portada-mixteca.jpg" 
+          alt="Gobernador" 
+          className={styles.heroBg} 
         />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.js</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+      </section>
+
+      {/* Trámites y Servicios */}
+      <section className={styles.servicesSection}>
+        <div className={styles.sectionHeader}>
+          <h2>Trámites y Servicios</h2>
+          <div className={styles.divider}></div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
+        
+        <div className={styles.servicesGrid}>
+          <Link href="/citas" className={styles.serviceCard}>
+            <div className={styles.serviceIcon}>
+              <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/tramites-home/icono_tramites.png" alt="Procuraduría" />
+            </div>
+            <h3>Procuraduría de la Defensa del Trabajo (PRODET)</h3>
+            <p>Agenda tu cita para recibir asesoría legal, conciliación o representación jurídica laboral gratuita.</p>
+            <span className={styles.serviceLink}>Ver más →</span>
+          </Link>
+
+          <a href="#" className={styles.serviceCard}>
+            <div className={styles.serviceIcon}>
+              <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/tramites-home/icono_servicios.png" alt="Inspección" />
+            </div>
+            <h3>Dirección de Inspección del Trabajo</h3>
+            <p>Conoce los requisitos para solicitar una inspección laboral en tu centro de trabajo.</p>
+            <span className={styles.serviceLink}>Ver más →</span>
           </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+
+          <a href="#" className={styles.serviceCard}>
+            <div className={styles.serviceIcon}>
+              <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/icono-contacto.png" alt="Empleo" />
+            </div>
+            <h3>Fomento al Empleo</h3>
+            <p>Descubre las vacantes disponibles y los programas de apoyo para buscadores de empleo.</p>
+            <span className={styles.serviceLink}>Ver más →</span>
           </a>
         </div>
-      </main>
+      </section>
+
+      {/* Convocatorias */}
+      <section className={styles.convocatoriasSection}>
+        <div className={styles.sectionHeader}>
+          <h2>Convocatorias</h2>
+          <div className={styles.divider}></div>
+        </div>
+        <div className={styles.bannersGrid}>
+          <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-RUTA.jpg" alt="Ruta" className={styles.bannerImg} />
+          <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-TIP.jpg" alt="TIP" className={styles.bannerImg} />
+          <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-mixteca-1.jpg" alt="Mixteca" className={styles.bannerImg} />
+        </div>
+      </section>
+
+      {/* Noticias */}
+      <section className={styles.newsSection}>
+        <div className={styles.sectionHeader}>
+          <h2>Últimas Noticias</h2>
+          <div className={styles.divider}></div>
+        </div>
+
+        <div className={styles.newsGrid}>
+          <div className={styles.newsCard}>
+            <div className={styles.newsImage}>
+              <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/07/vial-amp.jpg" alt="Noticia 1" />
+            </div>
+            <div className={styles.newsContent}>
+              <span className={styles.newsDate}>25 Julio, 2026</span>
+              <h3>Avances en Conciliación Laboral</h3>
+              <p>Más del 80% de los conflictos laborales se resuelven a través del diálogo y la conciliación en Oaxaca.</p>
+              <a href="#" className={styles.readMore}>Leer nota completa</a>
+            </div>
+          </div>
+          <div className={styles.newsCard}>
+            <div className={styles.newsImage}>
+              <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/07/tu-vida.jpg" alt="Noticia 2" />
+            </div>
+            <div className={styles.newsContent}>
+              <span className={styles.newsDate}>20 Julio, 2026</span>
+              <h3>Programa Tu Vida</h3>
+              <p>Conoce los nuevos incentivos y programas de desarrollo laboral para la juventud oaxaqueña.</p>
+              <a href="#" className={styles.readMore}>Leer nota completa</a>
+            </div>
+          </div>
+        </div>
+        
+        <div className={styles.viewAllNews}>
+          <a href="#" className="btn-secondary">Ver todas las noticias</a>
+        </div>
+      </section>
+
+      {/* Multimedia */}
+      <section className={styles.multimediaSection}>
+        <div className={styles.sectionHeader}>
+          <h2>Multimedia</h2>
+          <div className={styles.divider}></div>
+        </div>
+        <div className={styles.multimediaContainer}>
+          <div className={styles.videoPlaceholder}>
+            <div className={styles.playButton}>▶</div>
+            <p>Video Institucional</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Ejes de Gobierno */}
+      <section className={styles.ejesSection}>
+        <div className={styles.sectionHeader}>
+          <h2>Ejes de Gobierno</h2>
+          <div className={styles.divider}></div>
+        </div>
+        <div className={styles.ejesGrid}>
+          <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/ejes/EJE_01_PS.png" alt="Eje 1" />
+          <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/ejes/EJE_03_RH.png" alt="Eje 3" />
+          <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/ejes/EJE_04_DIS.png" alt="Eje 4" />
+        </div>
+      </section>
+      
     </div>
   );
 }
