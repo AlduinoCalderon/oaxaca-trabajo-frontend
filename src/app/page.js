@@ -13,7 +13,7 @@ export default function HomePage() {
             <p className="fade-in" style={{animationDelay: '0.2s'}}>Gobierno del Estado de Oaxaca 2022 - 2028</p>
             <div className={styles.heroActions}>
               <Link href="#documentos" className={`btn-primary fade-in`} style={{animationDelay: '0.4s'}}>
-                Ver Documentos Oficiales
+                Ver Documentos de interés
               </Link>
             </div>
           </div>
@@ -61,10 +61,10 @@ export default function HomePage() {
           </a>
         </div>
       </section>
-      {/* Documentos Oficiales */}
+      {/* Documentos de interés */}
       <section id="documentos" className={styles.documentosSection}>
         <div className={styles.sectionHeader}>
-          <h2>Documentos Oficiales</h2>
+          <h2>Documentos de interés</h2>
           <div className={styles.divider}></div>
         </div>
         <div className={styles.documentosGrid}>
@@ -95,8 +95,12 @@ export default function HomePage() {
           <div className={styles.divider}></div>
         </div>
         <div className={styles.bannersGrid}>
-          <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-RUTA.jpg" alt="Ruta" className={styles.bannerImg} />
-          <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-TIP.jpg" alt="TIP" className={styles.bannerImg} />
+          <Link href="/ruta">
+            <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-RUTA.jpg" alt="Ruta" className={styles.bannerImg} />
+          </Link>
+          <Link href="/distintivo-tip">
+            <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-TIP.jpg" alt="TIP" className={styles.bannerImg} />
+          </Link>
           <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2026/08/banners-mixteca-1.jpg" alt="Mixteca" className={styles.bannerImg} />
         </div>
       </section>

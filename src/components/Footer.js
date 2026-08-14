@@ -8,8 +8,8 @@ export default function Footer() {
           
           <div className={styles.col}>
             <img 
-              src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/imagotipo-footer.svg" 
-              alt="Gobierno del Estado de Oaxaca" 
+              src="/icon.png" 
+              alt="Secretaría del Trabajo" 
               className={styles.logoFooter}
             />
           </div>
@@ -25,11 +25,11 @@ export default function Footer() {
           </div>
 
           <div className={styles.col}>
-            <h3>Procuraduría de la Defensa del Trabajo</h3>
-            <p><strong>Atención al Público:</strong></p>
+            <h3>Secretaría del Trabajo</h3>
+            <p><strong>Contacto y Atención:</strong></p>
             <p>Calzada Porfirio Díaz 901, 1er nivel<br/>Col. Reforma, C.P. 68050<br/>Oaxaca de Juárez, Oax.</p>
-            <p className={styles.phone}>Tel: 951 506 1885</p>
-            <p className={styles.email}>prodet.setrao@oaxaca.gob.mx</p>
+            <p className={styles.phone}>Tel: (951) 506 1884</p>
+            <p className={styles.email}>secretaria.trabajo@oaxaca.gob.mx</p>
           </div>
 
           <div className={styles.col}>
@@ -39,11 +39,6 @@ export default function Footer() {
               <a href="#" className={styles.icon}>TW</a>
               <a href="#" className={styles.icon}>IG</a>
             </div>
-            <img 
-              src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/tecnologias-solo-blanco.png" 
-              alt="Tecnologías e Innovación" 
-              className={styles.logoTech}
-            />
           </div>
           
         </div>
