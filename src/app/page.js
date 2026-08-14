@@ -42,14 +42,14 @@ export default function HomePage() {
             <span className={styles.serviceLink}>Ver más →</span>
           </Link>
 
-          <a href="#" className={styles.serviceCard}>
+          <Link href="/tramites/permiso-menores" className={styles.serviceCard}>
             <div className={styles.serviceIcon}>
               <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/tramites-home/icono_servicios.png" alt="Inspección" />
             </div>
-            <h3>Dirección de Inspección del Trabajo</h3>
-            <p>Conoce los requisitos para solicitar una inspección laboral en tu centro de trabajo.</p>
+            <h3>Permisos de trabajo para menores</h3>
+            <p>Expedición de permisos de trabajo para menores en edad permitida.</p>
             <span className={styles.serviceLink}>Ver más →</span>
-          </a>
+          </Link>
 
           <a href="#" className={styles.serviceCard}>
             <div className={styles.serviceIcon}>
