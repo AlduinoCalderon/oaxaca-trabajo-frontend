@@ -37,7 +37,7 @@ export default function Header() {
               <Link href="#">Trámites y Servicios</Link>
               <Link href="#">Transparencia</Link>
               <Link href="#">Noticias</Link>
-              <Link href="/citas" className={styles.btnCitas}>Agendar Cita PRODET</Link>
+              <Link href="#documentos">Documentos Oficiales</Link>
             </nav>
           </div>
 
@@ -61,7 +61,7 @@ export default function Header() {
           <Link href="#" onClick={() => setIsMenuOpen(false)}>Trámites y Servicios</Link>
           <Link href="#" onClick={() => setIsMenuOpen(false)}>Transparencia</Link>
           <Link href="#" onClick={() => setIsMenuOpen(false)}>Noticias</Link>
-          <Link href="/citas" className={styles.btnCitasMobile} onClick={() => setIsMenuOpen(false)}>Agendar Cita PRODET</Link>
+          <Link href="#documentos" onClick={() => setIsMenuOpen(false)}>Documentos Oficiales</Link>
         </nav>
       </div>
     </>

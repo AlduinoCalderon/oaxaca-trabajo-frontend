@@ -12,8 +12,8 @@ export default function HomePage() {
             <h1 className="fade-in">Secretaría del Trabajo</h1>
             <p className="fade-in" style={{animationDelay: '0.2s'}}>Gobierno del Estado de Oaxaca 2022 - 2028</p>
             <div className={styles.heroActions}>
-              <Link href="/citas" className={`btn-primary fade-in`} style={{animationDelay: '0.4s'}}>
-                Agendar Cita PRODET
+              <Link href="#documentos" className={`btn-primary fade-in`} style={{animationDelay: '0.4s'}}>
+                Ver Documentos Oficiales
               </Link>
             </div>
           </div>
@@ -61,6 +61,24 @@ export default function HomePage() {
           </a>
         </div>
       </section>
+      {/* Documentos Oficiales */}
+      <section id="documentos" className={styles.documentosSection}>
+        <div className={styles.sectionHeader}>
+          <h2>Documentos Oficiales</h2>
+          <div className={styles.divider}></div>
+        </div>
+        <div className={styles.documentosGrid}>
+          <a href="/documentos/Memorandum_Entendimiento_Inspeccion.pdf" target="_blank" rel="noopener noreferrer" className={styles.documentoCard}>
+            <div className={styles.documentoIcon}>📄</div>
+            <div className={styles.documentoInfo}>
+              <h3>Memorándum de Entendimiento</h3>
+              <p>Dirección de Inspección (Versión Final)</p>
+            </div>
+            <span className={styles.downloadBtn}>Descargar PDF</span>
+          </a>
+        </div>
+      </section>
+
 
       {/* Convocatorias */}
       <section className={styles.convocatoriasSection}>
