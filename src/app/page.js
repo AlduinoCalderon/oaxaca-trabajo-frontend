@@ -76,6 +76,14 @@ export default function HomePage() {
             </div>
             <span className={styles.downloadBtn}>Descargar PDF</span>
           </a>
+          <a href="/documento-ruta-trabajo-infantil.pdf" target="_blank" rel="noopener noreferrer" className={styles.documentoCard}>
+            <div className={styles.documentoIcon}>📄</div>
+            <div className={styles.documentoInfo}>
+              <h3>Ruta de Identificación y Atención</h3>
+              <p>Casos de Trabajo Infantil en el Estado de Oaxaca</p>
+            </div>
+            <span className={styles.downloadBtn}>Descargar PDF</span>
+          </a>
         </div>
       </section>
 
