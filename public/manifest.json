@@ -1,0 +1,22 @@
+{
+  "name": "Secretaría del Trabajo Oaxaca",
+  "short_name": "SE TRA",
+  "description": "Portal Oficial de la Secretaría del Trabajo del Estado de Oaxaca",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6e203c",
+  "icons": [
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

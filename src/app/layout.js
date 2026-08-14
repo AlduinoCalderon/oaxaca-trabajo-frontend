@@ -8,6 +8,7 @@ const montserrat = Montserrat({ subsets: ['latin'], weight: ['300', '400', '500'
 export const metadata = {
   title: 'Secretaría del Trabajo | Gobierno del Estado de Oaxaca',
   description: 'Portal oficial de la Secretaría del Trabajo del Estado de Oaxaca.',
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({ children }) {
