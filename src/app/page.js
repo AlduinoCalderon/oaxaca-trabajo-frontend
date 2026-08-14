@@ -33,14 +33,18 @@ export default function HomePage() {
         </div>
         
         <div className={styles.servicesGrid}>
-          <Link href="/citas" className={styles.serviceCard}>
+          <div className={styles.serviceCard}>
             <div className={styles.serviceIcon}>
               <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/themes/temadeps2023/assets/images/tramites-home/icono_tramites.png" alt="Procuraduría" />
             </div>
             <h3>Procuraduría de la Defensa del Trabajo</h3>
             <p>Defensa de tus derechos laborales</p>
-            <span className={styles.serviceLink}>Ver más →</span>
-          </Link>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '15px' }}>
+              <Link href="/citas" style={{ fontSize: '0.85rem', background: '#005a87', color: 'white', padding: '8px 12px', borderRadius: '5px', textAlign: 'center', textDecoration: 'none' }}>
+                📅 Agenda tu cita
+              </Link>
+            </div>
+          </div>
 
           <div className={styles.serviceCard}>
             <div className={styles.serviceIcon}>
