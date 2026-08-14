@@ -75,9 +75,6 @@ export default function HomePage() {
               <Link href="#" style={{ fontSize: '0.85rem', background: '#005a87', color: 'white', padding: '8px 12px', borderRadius: '5px', textAlign: 'center', textDecoration: 'none' }}>
                 🏢 Fomento Laboral Penitenciario
               </Link>
-              <Link href="#" style={{ fontSize: '0.85rem', background: '#005a87', color: 'white', padding: '8px 12px', borderRadius: '5px', textAlign: 'center', textDecoration: 'none' }}>
-                🛡️ Comisión Permanente para la Prevención y Erradicación del Trabajo Infantil y la Protección de Adolescentes Trabajadores en Edad Permitida
-              </Link>
             </div>
           </div>
         </div>
